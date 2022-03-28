@@ -15,13 +15,19 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _navigatetoIntroductionScreen() async {
-    await Future.delayed(Duration(seconds: 4), () {});
+    await Future.delayed(Duration(seconds: 1), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (_) => IntroductionScreen()));
+        context, MaterialPageRoute(builder: (_) => const IntroScreen()));
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Container()));
+    return Scaffold(
+      body: Center(
+        child: Container(
+          child: Image.asset('assets/images/Nirvana.png'),
+        ),
+      ),
+    );
   }
 }
