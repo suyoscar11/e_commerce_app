@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/Screens/Bottom%20Bar/Categories_bottombar.dart';
 import 'package:e_commerce_app/Screens/LoginPage.dart';
 import 'package:e_commerce_app/Products/home_body.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: (AppBar(
+        appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
           title:
@@ -74,7 +75,7 @@ class _HomepageState extends State<Homepage> {
                 },
                 icon: customIcon),
           ],
-        )),
+        ),
         bottomNavigationBar: BottomNavigationBar(
             selectedItemColor: Colors.blue,
             unselectedItemColor: Colors.black,
@@ -84,8 +85,14 @@ class _HomepageState extends State<Homepage> {
                   icon: IconButton(onPressed: () {}, icon: Icon(Icons.home)),
                   label: 'Home'),
               BottomNavigationBarItem(
-                  icon:
-                      IconButton(onPressed: () {}, icon: Icon(Icons.category)),
+                  icon: IconButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => CategoriesBottomBar()));
+                      },
+                      icon: Icon(Icons.category)),
                   label: 'Category'),
               BottomNavigationBarItem(
                   icon: IconButton(

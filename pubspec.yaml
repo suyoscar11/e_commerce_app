@@ -65,6 +65,7 @@ flutter:
   assets:
    - assets/images/
    - assets/images/Nirvana.png
+   - assets/images/shieldwithatick.png
    - assets/icons/
    - assets/icons/groceries.JPG
    - assets/icons/Electronics.png
@@ -76,6 +77,16 @@ flutter:
    - assets/icons/categoori.png
    - assets/icons/books.JPG
    - assets/icons/abc.JPG
+   - assets/categories/Electronics Devices/
+   - assets/categories/Electronics Devices/voice.JPG
+   - assets/categories/Electronics Devices/camera.JPG
+   - assets/categories/Electronics Devices/gaming.JPG
+   - assets/categories/Electronics Devices/tv.JPG
+   - assets/categories/Electronics Devices/laptops.JPG
+   - assets/categories/Electronics Devices/mobiles.JPG
+   - assets/categories/Electronics Devices/music.JPG
+   - assets/categories/Electronics Devices/printers.JPG
+   - assets/categories/Electronics Devices/security.JPG
   
    
 

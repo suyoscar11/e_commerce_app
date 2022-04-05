@@ -19,14 +19,15 @@ class Product with ChangeNotifier {
 }
 
 class Products with ChangeNotifier {
-  List<Product> _items = [
+  final List<Product> _items = [
     Product(
         id: '1',
         category: 'Business',
-        name: 'Top Sales',
+        name:
+            'So here we are on this amazing jack manjabjcbsdjjksdahjgsdsjkbvhjsvbsdjvhjsvjasdbhjsdjkcbhjsvvhbjvsbdhvbjsadvhs ',
         description: 'Lorem Ipsum',
         imageUrl: 'https://source.unsplash.com/user/c_v_r',
-        price: 2),
+        price: 28000),
     Product(
         id: '1',
         category: 'Business',
@@ -46,5 +47,9 @@ class Products with ChangeNotifier {
 
   List<Product> get items {
     return [..._items];
+  }
+
+  Product findById(String id) {
+    return _items.firstWhere((pdt) => pdt.id == id);
   }
 }

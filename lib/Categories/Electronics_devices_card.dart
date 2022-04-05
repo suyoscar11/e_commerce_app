@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CategoriesCard extends StatelessWidget {
+class ElectronicsDevicesCard extends StatelessWidget {
   final Image icon;
   final String name;
-
-  CategoriesCard(this.icon, this.name);
+  ElectronicsDevicesCard(this.icon, this.name);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +15,6 @@ class CategoriesCard extends StatelessWidget {
           alignment: WrapAlignment.center,
           children: [
             Container(
-              height: 122,
               child: Column(
                 children: <Widget>[
                   icon,
@@ -25,7 +23,8 @@ class CategoriesCard extends StatelessWidget {
                   ),
                   Text(
                     name,
-                    style: GoogleFonts.poppins(fontSize: 15),
+                    style: GoogleFonts.poppins(
+                        fontSize: 15, fontWeight: FontWeight.bold),
                   )
                 ],
               ),
