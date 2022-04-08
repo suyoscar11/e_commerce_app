@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       providers: [ChangeNotifierProvider.value(value: Products())],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: SplashScreen(),
+        home:const SplashScreen(),
         routes: {DetailPage.routeName: (ctx) => DetailPage()},
       ),
     );
