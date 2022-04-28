@@ -1,5 +1,6 @@
 import 'package:e_commerce_app/Screens/Homepage.dart';
 import 'package:e_commerce_app/Screens/IntroductionScreen.dart';
+import 'package:e_commerce_app/Screens/cart_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,9 +17,9 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _navigatetoIntroductionScreen() async {
-    await Future.delayed(Duration(milliseconds: 1), () {});
+    await Future.delayed(Duration(seconds: 1), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (_) => const Homepage()));
+        context, MaterialPageRoute(builder: (_) => Homepage()));
   }
 
   @override

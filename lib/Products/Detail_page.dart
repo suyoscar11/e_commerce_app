@@ -13,81 +13,70 @@ class DetailPage extends StatelessWidget {
     final productId = ModalRoute.of(context)?.settings.arguments as String;
     final loadedPdt = Provider.of<Products>(context).findById(productId);
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Colors.blue,
-          unselectedItemColor: Colors.black,
-          items: [
-            BottomNavigationBarItem(
-                icon: Padding(
-                    padding: const EdgeInsets.only(left: 0),
-                    child: ElevatedButton(
-                        onPressed: () {},
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Icon(
-                              Icons.credit_card,
-                              size: 18,
-                            ),
-                            Text('     BUY NOW',
-                                style: GoogleFonts.poppins(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white)),
-                          ],
-                        ),
-                        style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStateProperty.all(Colors.redAccent),
-                            padding:
-                                MaterialStateProperty.all(EdgeInsets.all(12)),
-                            shape: MaterialStateProperty.all<
-                                    RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                    side: BorderSide(color: Colors.red)))))),
-                label: ' '),
-            BottomNavigationBarItem(
-                backgroundColor: Colors.white,
-                icon: Padding(
-                  padding: const EdgeInsets.only(right: 50),
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.home),
-                    iconSize: 35,
+      bottomNavigationBar: Container(
+        margin: EdgeInsets.only(top: 15),
+        color: Colors.white.withOpacity(1),
+        height: 60,
+        width: MediaQuery.of(context).size.width,
+        child: Row(
+          children: [
+            SizedBox(
+              width: 10,
+            ),
+            Column(children: [
+              IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home,
+                    size: 40,
                     color: Colors.redAccent,
+                  ))
+            ]),
+            SizedBox(
+              width: 40,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.credit_card,
                   ),
-                ),
-                label: ' '),
-            BottomNavigationBarItem(
-                icon: ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => CartScreen()));
-                    },
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.shopping_cart,
-                          size: 18,
-                        ),
-                        Text('     ADD TO CART',
-                            style: GoogleFonts.poppins(
-                                fontSize: 10,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white)),
-                      ],
-                    ),
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(Colors.grey),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(15)),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                    side: BorderSide(color: Colors.grey))))),
-                label: ' '),
-          ]),
+                  SizedBox(width: 2),
+                  Text(
+                    'BUY NOW',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                  ),
+                ],
+              ),
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.red)),
+            ),
+            SizedBox(
+              width: 12,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (_) => CartScreen()));
+              },
+              child: Row(
+                children: [
+                  Icon(Icons.shopping_cart),
+                  SizedBox(width: 2),
+                  Text(
+                    'ADD TO CART',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                  ),
+                ],
+              ),
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.grey.withOpacity(1))),
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -160,7 +149,7 @@ class DetailPage extends StatelessWidget {
             // Yaha bata chai tyo name wala container suru hunxa..
             Container(
               margin: EdgeInsets.only(left: 15, right: 15),
-              height: 580,
+              height: 650,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 border: Border.symmetric(),
@@ -231,7 +220,7 @@ class DetailPage extends StatelessWidget {
                           height: 40,
                         ),
                         Text(
-                            '  __________________________________________________________________',
+                            '  ________________________________________________________',
                             style: TextStyle(
                                 color: Colors.brown.withOpacity(0.2))),
                         Padding(padding: EdgeInsets.only(top: 30, left: 14)),
@@ -243,20 +232,20 @@ class DetailPage extends StatelessWidget {
                                   fontWeight: FontWeight.w600,
                                 )),
                             SizedBox(
-                              width: 25,
+                              width: 20,
                             ),
                             Text(
                               'Rs.33000 ',
                               style: TextStyle(
-                                  fontSize: 21,
+                                  fontSize: 18,
                                   decoration: TextDecoration.lineThrough,
                                   color: Colors.grey),
                             ),
                             Text('/ Piece ',
                                 style: TextStyle(
-                                    fontSize: 21, color: Colors.grey)),
+                                    fontSize: 18, color: Colors.grey)),
                             SizedBox(
-                              width: 20,
+                              width: 15,
                             ),
                             ElevatedButton(
                                 onPressed: () {},
@@ -444,16 +433,19 @@ class DetailPage extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    '                                                                                                                          Seller Details',
+                    '    Seller Details',
                     style: GoogleFonts.poppins(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   Row(
                     children: [
-                      Icon(
-                        Icons.local_mall,
-                        size: 28,
-                        color: Colors.red,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Icon(
+                          Icons.local_mall,
+                          size: 28,
+                          color: Colors.red,
+                        ),
                       ),
                       SizedBox(
                         width: 18,

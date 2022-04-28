@@ -6,69 +6,73 @@ class ElectronicsDevicesCategories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      crossAxisCount: 2,
-      primary: false,
-      mainAxisSpacing: 10,
-      crossAxisSpacing: 10,
-      children: <Widget>[
-        ElectronicsDevicesCard(
-            Image.asset(
-              'assets/categories/Electronics Devices/voice.JPG',
-              height: 90,
-              width: 80,
-            ),
-            'Accessories'),
-        ElectronicsDevicesCard(
-            Image.asset(
-              'assets/categories/Electronics Devices/voice.JPG',
-              height: 90,
-              width: 80,
-            ),
-            'Accessories'),
-        ElectronicsDevicesCard(
-            Image.asset(
-              'assets/categories/Electronics Devices/voice.JPG',
-              height: 90,
-              width: 80,
-            ),
-            'Accessories'),
-        ElectronicsDevicesCard(
-            Image.asset(
-              'assets/categories/Electronics Devices/voice.JPG',
-              height: 90,
-              width: 80,
-            ),
-            'Accessories'),
-        ElectronicsDevicesCard(
-            Image.asset(
-              'assets/categories/Electronics Devices/voice.JPG',
-              height: 90,
-              width: 80,
-            ),
-            'Accessories'),
-        ElectronicsDevicesCard(
-            Image.asset(
-              'assets/categories/Electronics Devices/voice.JPG',
-              height: 90,
-              width: 80,
-            ),
-            'Accessories'),
-        ElectronicsDevicesCard(
-            Image.asset(
-              'assets/categories/Electronics Devices/voice.JPG',
-              height: 90,
-              width: 80,
-            ),
-            'Accessories'),
-        ElectronicsDevicesCard(
-            Image.asset(
-              'assets/categories/Electronics Devices/voice.JPG',
-              height: 90,
-              width: 80,
-            ),
-            'Accessories'),
-      ],
+    return Container(
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
+      child: GridView.count(
+        crossAxisCount: 2,
+        primary: false,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
+        children: <Widget>[
+          ElectronicsDevicesCard(
+              Image.asset(
+                'assets/categories/Electronics Devices/voice.JPG',
+                height: 90,
+                width: 80,
+              ),
+              'Accessories'),
+          ElectronicsDevicesCard(
+              Image.asset(
+                'assets/categories/Electronics Devices/voice.JPG',
+                height: 90,
+                width: 80,
+              ),
+              'Accessories'),
+          ElectronicsDevicesCard(
+              Image.asset(
+                'assets/categories/Electronics Devices/voice.JPG',
+                height: 90,
+                width: 80,
+              ),
+              'Accessories'),
+          ElectronicsDevicesCard(
+              Image.asset(
+                'assets/categories/Electronics Devices/voice.JPG',
+                height: 90,
+                width: 80,
+              ),
+              'Accessories'),
+          ElectronicsDevicesCard(
+              Image.asset(
+                'assets/categories/Electronics Devices/voice.JPG',
+                height: 90,
+                width: 80,
+              ),
+              'Accessories'),
+          ElectronicsDevicesCard(
+              Image.asset(
+                'assets/categories/Electronics Devices/voice.JPG',
+                height: 90,
+                width: 80,
+              ),
+              'Accessories'),
+          ElectronicsDevicesCard(
+              Image.asset(
+                'assets/categories/Electronics Devices/voice.JPG',
+                height: 90,
+                width: 80,
+              ),
+              'Accessories'),
+          ElectronicsDevicesCard(
+              Image.asset(
+                'assets/categories/Electronics Devices/voice.JPG',
+                height: 90,
+                width: 80,
+              ),
+              'Accessories'),
+        ],
+      ),
     );
   }
 }

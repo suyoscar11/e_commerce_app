@@ -24,7 +24,7 @@ class Products with ChangeNotifier {
         id: '1',
         category: 'Business',
         name:
-            'So here we are on this amazing jack manjabjcbsdjjksdahjgsdsjkbvhjsvbsdjvhjsvjasdbhjsdjkcbhjsvvhbjvsbdhvbjsadvhs ',
+            'jhhvhvhvhllmanjabjcbsdjjksdahjgsdsjkbvhjsvbsdjvhjsvjasdbhjsdjkcbhjsvvhbjvsbdhvbjsadvhs ',
         description: 'Lorem Ipsum',
         imageUrl: 'https://source.unsplash.com/user/c_v_r',
         price: 28000),

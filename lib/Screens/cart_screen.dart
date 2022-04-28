@@ -63,8 +63,8 @@ class CartScreen extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      '     Shopping Cart',
-                      style: GoogleFonts.poppins(fontSize: 30),
+                      'Shopping Cart',
+                      style: GoogleFonts.poppins(fontSize: 28),
                     ),
                     SizedBox(
                       width: 25,
@@ -76,7 +76,7 @@ class CartScreen extends StatelessWidget {
                         },
                         child: Text('1 Items',
                             style: GoogleFonts.poppins(
-                                fontSize: 18, fontWeight: FontWeight.normal)),
+                                fontSize: 15, fontWeight: FontWeight.normal)),
                         style: ButtonStyle(
                             backgroundColor:
                                 MaterialStateProperty.all(Colors.green),
@@ -108,11 +108,10 @@ class CartScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       Image.asset(
-                        'asset/images/Nirvana.png',
-                        height: 100,
-                        width: 80,
+                        'asset/images/doormeet.png',
+                        height: MediaQuery.of(context).size.height,
+                        width: MediaQuery.of(context).size.width,
                       ),
-                      Text(' ')
                     ],
                   ))
             ],

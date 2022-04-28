@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/Screens/Bottom%20Bar/Categories_bottombar.dart';
 import 'package:e_commerce_app/Screens/LoginPage.dart';
 import 'package:e_commerce_app/Products/home_body.dart';
+import 'package:e_commerce_app/Screens/cart_screen.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatefulWidget {
@@ -100,7 +101,11 @@ class _HomepageState extends State<Homepage> {
                   label: 'Offers'),
               BottomNavigationBarItem(
                   icon: IconButton(
-                      onPressed: () {}, icon: Icon(Icons.shopping_basket)),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (_) => CartScreen()));
+                      },
+                      icon: Icon(Icons.shopping_basket)),
                   label: 'Cart'),
               BottomNavigationBarItem(
                   icon: IconButton(

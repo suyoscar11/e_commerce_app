@@ -56,17 +56,17 @@ class HomeBody extends StatelessWidget {
                   Text('Weekly Deals',
                       style: GoogleFonts.poppins(
                           fontSize: 20, fontWeight: FontWeight.bold)),
-                  Padding(padding: EdgeInsets.only(left: 80)),
+                  Padding(padding: EdgeInsets.only(left: 20)),
                   ElevatedButton(
                       onPressed: () {},
                       child: Text('View More',
                           style: GoogleFonts.poppins(
-                              fontSize: 15, fontWeight: FontWeight.normal)),
+                              fontSize: 7, fontWeight: FontWeight.normal)),
                       style: ButtonStyle(
                           backgroundColor:
                               MaterialStateProperty.all(Colors.red),
                           padding:
-                              MaterialStateProperty.all(EdgeInsets.all(15)),
+                              MaterialStateProperty.all(EdgeInsets.all(10)),
                           shape:
                               MaterialStateProperty.all<RoundedRectangleBorder>(
                                   RoundedRectangleBorder(

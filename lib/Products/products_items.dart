@@ -19,7 +19,9 @@ class ProductItem extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(15.0),
         child: GridTile(
-          child: Image.network(imageUrl),
+          child: Image.network(
+            imageUrl,
+          ),
         ),
       ),
     );

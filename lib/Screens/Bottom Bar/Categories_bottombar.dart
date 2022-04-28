@@ -49,14 +49,14 @@ class _CategoriesBottomBarState extends State<CategoriesBottomBar> {
           SingleChildScrollView(
             child: Container(
                 height: 1500,
-                width: 125,
+                width: 110,
                 color: Colors.grey.withOpacity(0.2),
                 child: CategoriesBB()),
           ),
           Container(
-            color: Colors.redAccent,
+            color: Colors.grey,
             height: MediaQuery.of(context).size.height,
-            width: 375,
+            width: 290,
             child: const ElectronicsDevicesCategories(),
           )
         ],

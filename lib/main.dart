@@ -2,6 +2,7 @@ import 'package:e_commerce_app/Categories/Electronics_devices_categories.dart';
 import 'package:e_commerce_app/Products/Detail_page.dart';
 import 'package:e_commerce_app/Products/home_body.dart';
 import 'package:e_commerce_app/Screens/Homepage.dart';
+import 'package:e_commerce_app/Screens/LoginPage.dart';
 import 'package:e_commerce_app/Screens/SplashScreen.dart';
 import 'package:e_commerce_app/Screens/cart_screen.dart';
 import 'package:e_commerce_app/Screens/widgets/Categories.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       providers: [ChangeNotifierProvider.value(value: Products())],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: SplashScreen(),
+        home: LoginPage(),
         routes: {DetailPage.routeName: (ctx) => DetailPage()},
       ),
     );
