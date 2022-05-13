@@ -45,19 +45,19 @@ class _IntroScreenState extends State<IntroScreen> {
         PageViewModel(
           title: "E-Commerce",
           body: "The no. 1 E-commerce App",
-          image: introImage('assets/images/Nirvana.png'),
+          image: introImage('assets/images/logo.jpg'),
           decoration: pageDecoration,
         ),
         PageViewModel(
           title: "F-Commerce",
           body: "The no. 1 E-commerce App",
-          image: introImage('assets/images/Nirvana.png'),
+          image: introImage('assets/images/20off.jpg'),
           decoration: pageDecoration,
         ),
         PageViewModel(
           title: "G-Commerce",
           body: "The no. 1 E-commerce App",
-          image: introImage('assets/images/Nirvana.png'),
+          image: introImage('assets/images/products1.jpg'),
           decoration: pageDecoration,
         ),
 

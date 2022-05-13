@@ -3,10 +3,10 @@ import 'package:e_commerce_app/modals/Products.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class ProductItem extends StatelessWidget {
+class ProductItemCard extends StatelessWidget {
   final String name;
   final String imageUrl;
-  ProductItem({required this.name, required this.imageUrl});
+  ProductItemCard({required this.name, required this.imageUrl});
 
   @override
   Widget build(BuildContext context) {

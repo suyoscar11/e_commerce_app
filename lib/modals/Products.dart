@@ -23,6 +23,28 @@ class Products with ChangeNotifier {
     Product(
         id: '1',
         category: 'Business',
+        name: 'MamaEarth Awesome Orange Toothpaste ',
+        description: 'Lorem Ipsum',
+        imageUrl: 'https://source.unsplash.com/user/c_v_r',
+        price: 28000),
+    Product(
+        id: '1',
+        category: 'Business',
+        name: 'Top Sales',
+        description: 'Lorem Ipsum',
+        imageUrl: 'https://picsum.photos/200/300',
+        price: 2),
+    Product(
+        id: '1',
+        category: 'Business',
+        name: 'Top Sales',
+        description: 'Lorem Ipsum',
+        imageUrl:
+            'https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
+        price: 2),
+    Product(
+        id: '1',
+        category: 'Business',
         name:
             'jhhvhvhvhllmanjabjcbsdjjksdahjgsdsjkbvhjsvbsdjvhjsvjasdbhjsdjkcbhjsvvhbjvsbdhvbjsadvhs ',
         description: 'Lorem Ipsum',

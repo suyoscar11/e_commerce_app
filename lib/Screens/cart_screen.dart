@@ -22,7 +22,7 @@ class CartScreen extends StatelessWidget {
             width: 120,
           ),
           const SizedBox(
-            width: 120,
+            width: 30,
           ),
           Expanded(
               child: TextField(
@@ -63,7 +63,7 @@ class CartScreen extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      'Shopping Cart',
+                      '    Shopping Cart',
                       style: GoogleFonts.poppins(fontSize: 28),
                     ),
                     SizedBox(
@@ -95,7 +95,7 @@ class CartScreen extends StatelessWidget {
               ),
               Container(
                   margin: EdgeInsets.only(left: 15, right: 15),
-                  height: 580,
+                  height: 400,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     border: Border.symmetric(),
@@ -105,12 +105,432 @@ class CartScreen extends StatelessWidget {
                       BoxShadow(color: Colors.grey, blurRadius: 20),
                     ],
                   ),
-                  child: Row(
+                  child: GridView.count(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 10,
+                    crossAxisSpacing: 20,
                     children: [
-                      Image.asset(
-                        'asset/images/doormeet.png',
-                        height: MediaQuery.of(context).size.height,
-                        width: MediaQuery.of(context).size.width,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 12.0),
+                        child: Container(
+                          width: 20,
+                          child: Image.asset(
+                            'assets/images/products1.jpg',
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
+                      ),
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Container(
+                              child: Text(
+                                'Fathers Day huge Day Sale. Happening all across the country.  ',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 20, fontWeight: FontWeight.w500),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text('Seller:',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.redAccent)),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Expanded(
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Rs 850',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.delete,
+                                        color: Colors.red,
+                                        size: 24,
+                                      ))
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 0,
+                            ),
+                            Expanded(
+                              child: Text(
+                                'Total: Rs 1700',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ]),
+                      SizedBox(
+                        height: 0,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 15.0),
+                        child: Expanded(
+                          child: Row(
+                            children: [
+                              ElevatedButton(
+                                  onPressed: () {},
+                                  child: Text('-',
+                                      style: GoogleFonts.poppins(
+                                          fontSize: 30,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal)),
+                                  style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                              Colors.white),
+                                      padding: MaterialStateProperty.all(
+                                          EdgeInsets.all(10)),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(70.0),
+                                              side: BorderSide(
+                                                  color: Colors.red))))),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text(
+                                '1',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              ElevatedButton(
+                                  onPressed: () {},
+                                  child: Text('+',
+                                      style: GoogleFonts.poppins(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.normal,
+                                          color: Colors.black)),
+                                  style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                              Colors.white),
+                                      padding: MaterialStateProperty.all(
+                                          EdgeInsets.all(10)),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(70.0),
+                                              side: BorderSide(
+                                                  color: Colors.red))))),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  )),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 15, right: 15),
+                  height: 400,
+                  width: MediaQuery.of(context).size.width,
+                  decoration: BoxDecoration(
+                    border: Border.symmetric(),
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                    boxShadow: const [
+                      BoxShadow(color: Colors.grey, blurRadius: 20),
+                    ],
+                  ),
+                  child: GridView.count(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 10,
+                    crossAxisSpacing: 20,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 12.0),
+                        child: Container(
+                          width: 20,
+                          child: Image.asset(
+                            'assets/images/20off.jpg',
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
+                      ),
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Container(
+                              child: Text(
+                                'Fathers Day huge Day Sale. Happening all across the country.  ',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 20, fontWeight: FontWeight.w500),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text('Seller:',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.redAccent)),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Expanded(
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Rs 1700',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.delete,
+                                        color: Colors.red,
+                                        size: 24,
+                                      ))
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 0,
+                            ),
+                            Expanded(
+                              child: Text(
+                                'Total: Rs 1700',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ]),
+                      SizedBox(
+                        height: 0,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 15.0),
+                        child: Expanded(
+                          child: Row(
+                            children: [
+                              ElevatedButton(
+                                  onPressed: () {},
+                                  child: Text('-',
+                                      style: GoogleFonts.poppins(
+                                          fontSize: 30,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal)),
+                                  style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                              Colors.white),
+                                      padding: MaterialStateProperty.all(
+                                          EdgeInsets.all(10)),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(70.0),
+                                              side: BorderSide(
+                                                  color: Colors.red))))),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text(
+                                '1',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              ElevatedButton(
+                                  onPressed: () {},
+                                  child: Text('+',
+                                      style: GoogleFonts.poppins(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.normal,
+                                          color: Colors.black)),
+                                  style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                              Colors.white),
+                                      padding: MaterialStateProperty.all(
+                                          EdgeInsets.all(10)),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(70.0),
+                                              side: BorderSide(
+                                                  color: Colors.red))))),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  )),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 15, right: 15),
+                  height: 400,
+                  width: MediaQuery.of(context).size.width,
+                  decoration: BoxDecoration(
+                    border: Border.symmetric(),
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                    boxShadow: const [
+                      BoxShadow(color: Colors.grey, blurRadius: 20),
+                    ],
+                  ),
+                  child: GridView.count(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 10,
+                    crossAxisSpacing: 20,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 12.0),
+                        child: Container(
+                          width: 20,
+                          child: Image.asset(
+                            'assets/images/products1.jpg',
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
+                      ),
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Container(
+                              child: Text(
+                                'Fathers Day huge Day Sale. Happening all across the country.  ',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 20, fontWeight: FontWeight.w500),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text('Seller:',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.redAccent)),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Expanded(
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Rs 850',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.delete,
+                                        color: Colors.red,
+                                        size: 24,
+                                      ))
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 0,
+                            ),
+                            Expanded(
+                              child: Text(
+                                'Total: Rs 1700',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ]),
+                      SizedBox(
+                        height: 0,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 15.0),
+                        child: Expanded(
+                          child: Row(
+                            children: [
+                              ElevatedButton(
+                                  onPressed: () {},
+                                  child: Text('-',
+                                      style: GoogleFonts.poppins(
+                                          fontSize: 30,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal)),
+                                  style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                              Colors.white),
+                                      padding: MaterialStateProperty.all(
+                                          EdgeInsets.all(10)),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(70.0),
+                                              side: BorderSide(
+                                                  color: Colors.red))))),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text(
+                                '1',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              ElevatedButton(
+                                  onPressed: () {},
+                                  child: Text('+',
+                                      style: GoogleFonts.poppins(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.normal,
+                                          color: Colors.black)),
+                                  style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                              Colors.white),
+                                      padding: MaterialStateProperty.all(
+                                          EdgeInsets.all(10)),
+                                      shape: MaterialStateProperty.all<
+                                              RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(70.0),
+                                              side: BorderSide(
+                                                  color: Colors.red))))),
+                            ],
+                          ),
+                        ),
                       ),
                     ],
                   ))

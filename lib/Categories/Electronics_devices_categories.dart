@@ -12,7 +12,7 @@ class ElectronicsDevicesCategories extends StatelessWidget {
       child: GridView.count(
         crossAxisCount: 2,
         primary: false,
-        mainAxisSpacing: 10,
+        mainAxisSpacing: 2,
         crossAxisSpacing: 10,
         children: <Widget>[
           ElectronicsDevicesCard(
@@ -24,53 +24,53 @@ class ElectronicsDevicesCategories extends StatelessWidget {
               'Accessories'),
           ElectronicsDevicesCard(
               Image.asset(
-                'assets/categories/Electronics Devices/voice.JPG',
+                'assets/categories/Electronics Devices/gaming.JPG',
                 height: 90,
                 width: 80,
               ),
-              'Accessories'),
+              'Gaming'),
           ElectronicsDevicesCard(
               Image.asset(
-                'assets/categories/Electronics Devices/voice.JPG',
+                'assets/categories/Electronics Devices/camera.JPG',
                 height: 90,
                 width: 80,
               ),
-              'Accessories'),
+              'Cameras'),
           ElectronicsDevicesCard(
               Image.asset(
-                'assets/categories/Electronics Devices/voice.JPG',
+                'assets/categories/Electronics Devices/mobiles.JPG',
                 height: 90,
                 width: 80,
               ),
-              'Accessories'),
+              'Mobiles'),
           ElectronicsDevicesCard(
               Image.asset(
-                'assets/categories/Electronics Devices/voice.JPG',
+                'assets/categories/Electronics Devices/printers.JPG',
                 height: 90,
                 width: 80,
               ),
-              'Accessories'),
+              'Printers'),
           ElectronicsDevicesCard(
               Image.asset(
-                'assets/categories/Electronics Devices/voice.JPG',
+                'assets/categories/Electronics Devices/projectors.JPG',
                 height: 90,
                 width: 80,
               ),
-              'Accessories'),
+              'Projectors'),
           ElectronicsDevicesCard(
               Image.asset(
-                'assets/categories/Electronics Devices/voice.JPG',
+                'assets/categories/Electronics Devices/security.JPG',
                 height: 90,
                 width: 80,
               ),
-              'Accessories'),
+              'Security'),
           ElectronicsDevicesCard(
               Image.asset(
-                'assets/categories/Electronics Devices/voice.JPG',
+                'assets/categories/Electronics Devices/tv.JPG',
                 height: 90,
                 width: 80,
               ),
-              'Accessories'),
+              'Television'),
         ],
       ),
     );

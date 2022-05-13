@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/Screens/Bottom%20Bar/Categories_bottombar.dart';
+import 'package:e_commerce_app/Screens/Studio/Studio.dart';
 import 'package:e_commerce_app/Screens/LoginPage.dart';
 import 'package:e_commerce_app/Products/home_body.dart';
 import 'package:e_commerce_app/Screens/cart_screen.dart';
@@ -28,7 +29,7 @@ class _HomepageState extends State<Homepage> {
               width: 120,
             ),
             const SizedBox(
-              width: 120,
+              width: 20,
             ),
             Expanded(
                 child: TextField(
@@ -97,7 +98,11 @@ class _HomepageState extends State<Homepage> {
                   label: 'Category'),
               BottomNavigationBarItem(
                   icon: IconButton(
-                      onPressed: () {}, icon: Icon(Icons.shopping_bag)),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (_) => Studio()));
+                      },
+                      icon: Icon(Icons.shopping_bag)),
                   label: 'Offers'),
               BottomNavigationBarItem(
                   icon: IconButton(

@@ -56,7 +56,7 @@ class _CategoriesBottomBarState extends State<CategoriesBottomBar> {
           Container(
             color: Colors.grey,
             height: MediaQuery.of(context).size.height,
-            width: 290,
+            width: 347,
             child: const ElectronicsDevicesCategories(),
           )
         ],

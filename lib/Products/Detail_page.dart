@@ -33,7 +33,7 @@ class DetailPage extends StatelessWidget {
                   ))
             ]),
             SizedBox(
-              width: 40,
+              width: 90,
             ),
             ElevatedButton(
               onPressed: () {},
@@ -43,9 +43,13 @@ class DetailPage extends StatelessWidget {
                     Icons.credit_card,
                   ),
                   SizedBox(width: 2),
-                  Text(
-                    'BUY NOW',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Text(
+                      'BUY NOW',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                    ),
                   ),
                 ],
               ),
@@ -88,7 +92,7 @@ class DetailPage extends StatelessWidget {
             width: 120,
           ),
           const SizedBox(
-            width: 120,
+            width: 30,
           ),
           Expanded(
               child: TextField(
@@ -131,25 +135,40 @@ class DetailPage extends StatelessWidget {
               height: 13,
             ), // yo chai tyo sano image rakhni wala container ho
             Container(
-              width: MediaQuery.of(context).size.width,
-              height: 90,
-              margin: EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                border: Border.symmetric(),
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.white,
-                boxShadow: const [
-                  BoxShadow(color: Colors.grey, blurRadius: 20),
-                ],
-              ),
-            ),
+                width: MediaQuery.of(context).size.width,
+                height: 90,
+                margin: EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  border: Border.symmetric(),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white,
+                  boxShadow: const [
+                    BoxShadow(color: Colors.grey, blurRadius: 20),
+                  ],
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(right: 100.0, top: 20, bottom: 20),
+                  child: SafeArea(
+                    child: Container(
+                      child: Row(
+                        children: [
+                          Image.network(
+                            loadedPdt.imageUrl,
+                            fit: BoxFit.contain,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                )),
             SizedBox(
               height: 20,
             ),
             // Yaha bata chai tyo name wala container suru hunxa..
             Container(
               margin: EdgeInsets.only(left: 15, right: 15),
-              height: 650,
+              height: 521,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 border: Border.symmetric(),
@@ -232,20 +251,20 @@ class DetailPage extends StatelessWidget {
                                   fontWeight: FontWeight.w600,
                                 )),
                             SizedBox(
-                              width: 20,
+                              width: 5,
                             ),
                             Text(
                               'Rs.33000 ',
                               style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 15,
                                   decoration: TextDecoration.lineThrough,
                                   color: Colors.grey),
                             ),
                             Text('/ Piece ',
                                 style: TextStyle(
-                                    fontSize: 18, color: Colors.grey)),
+                                    fontSize: 13, color: Colors.grey)),
                             SizedBox(
-                              width: 15,
+                              width: 5,
                             ),
                             ElevatedButton(
                                 onPressed: () {},
@@ -292,7 +311,7 @@ class DetailPage extends StatelessWidget {
                           height: 40,
                         ),
                         Text(
-                            '  __________________________________________________________________',
+                            '  ________________________________________________________',
                             style: TextStyle(
                                 color: Colors.brown.withOpacity(0.2))),
                         SizedBox(
@@ -356,16 +375,16 @@ class DetailPage extends StatelessWidget {
                                                 BorderRadius.circular(70.0),
                                             side: BorderSide(
                                                 color: Colors.red))))),
-                            SizedBox(width: 70),
+                            SizedBox(width: 30),
                             IconButton(
                                 onPressed: () {},
                                 icon: Icon(
-                                  Icons.heart_broken_rounded,
+                                  Icons.favorite,
                                   color: Colors.red,
                                   size: 30,
                                 )),
                             SizedBox(
-                              width: 0,
+                              width: 5,
                             ),
                             Text('Wishlist',
                                 style: GoogleFonts.poppins(
@@ -375,30 +394,30 @@ class DetailPage extends StatelessWidget {
                           ],
                         ),
                         SizedBox(
-                          height: 40,
+                          height: 70,
                         ),
-                        Text(
-                            '  __________________________________________________________________',
-                            style: TextStyle(
-                                color: Colors.brown.withOpacity(0.2))),
+                        Divider(
+                          indent: 10,
+                          endIndent: 10,
+                        ),
                         SizedBox(
-                          height: 60,
+                          height: 30,
                         ),
                         Row(
                           children: [
                             Image.asset(
-                              'assets/images/Nirvana.png',
-                              height: 100,
-                              width: 80,
+                              'assets/images/shieldwithatick.png',
+                              height: 80,
+                              width: 60,
                             ),
                             Column(
                               children: [
                                 Text('Active eCommerce Refund Protection*',
                                     style: GoogleFonts.poppins(
-                                        fontSize: 18, color: Colors.grey)),
+                                        fontSize: 14, color: Colors.grey)),
                                 Text('10 Days Cash Back Gurantee',
                                     style: GoogleFonts.poppins(
-                                      fontSize: 24,
+                                      fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ))
                               ],

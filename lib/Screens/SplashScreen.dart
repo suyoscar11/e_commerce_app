@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Center(
         child: Container(
-          child: Image.asset('assets/images/Nirvana.png'),
+          child: Image.asset('assets/images/logo.jpg'),
         ),
       ),
     );
