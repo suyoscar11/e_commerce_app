@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
   _navigatetoIntroductionScreen() async {
     await Future.delayed(Duration(seconds: 1), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (_) => Homepage()));
+        context, MaterialPageRoute(builder: (_) => IntroScreen()));
   }
 
   @override

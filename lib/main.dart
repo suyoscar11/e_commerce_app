@@ -1,5 +1,6 @@
 // @dart=2.9
 import 'package:e_commerce_app/Categories/Electronics_devices_categories.dart';
+import 'package:e_commerce_app/Just%20for%20Fun/homepage.dart';
 import 'package:e_commerce_app/Products/Detail_page.dart';
 import 'package:e_commerce_app/Products/home_body.dart';
 import 'package:e_commerce_app/Screens/Studio/Studio.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       providers: [ChangeNotifierProvider.value(value: Products())],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: SplashScreen(),
+        home: Homepage(),
         routes: {DetailPage.routeName: (ctx) => DetailPage()},
       ),
     );
